@@ -1,11 +1,12 @@
   applications:
-  - name: djangoapp
+  - name: mcmbestcarsapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: mcmbestcarsapp.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
   - name: djangoapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: mcmbestcarsapp.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
+<img src="images/settingspy.png" width="75%"/>
